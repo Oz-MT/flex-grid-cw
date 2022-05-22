@@ -1,0 +1,70 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  color: #fff;
+  text-align: center;
+}
+
+.logo{
+  background-color:aquamarine ;
+  grid-column: 1/span 4;
+  grid-row: 1;
+  padding: 1rem;
+}
+
+.menu{
+  background-color:lightskyblue;
+  grid-column: 5/span 8;
+  grid-row: 1;
+  padding: 1rem;
+}
+
+.banner{
+  background-color: red;
+  grid-column: 1/ span 12;
+  grid-row: 2;
+  padding: 4rem;
+}
+
+.bölüm1, .bölüm2, .bölüm3{
+  background-color: greenyellow;
+  grid-column:span 4;
+  grid-row: 3;
+  height: calc(100vh - 330px);
+  border: 1px solid grey;
+}
+
+.bölüm4{
+  grid-column: 1/ span 3;
+  grid-row: 4;
+}
+.bölüm5{
+  grid-column: 4/ span 6;
+  grid-row: 4;
+}
+.bölüm6{
+  grid-column: 10/ span 3;
+  grid-row: 4;
+}
+
+.A{
+  background-color: tomato;
+  padding: 1rem;
+  border: 1px solid grey;
+}
+
+.footer{
+  background-color: violet;
+  grid-column: 1/ span 12;
+  padding: 2rem;
+}
